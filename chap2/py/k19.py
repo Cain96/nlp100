@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # k19.py
 
-import sys
 from collections import Counter
+import sys
 
 
 def sort_by_frequency(file_name, n):

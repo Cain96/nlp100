@@ -2,6 +2,13 @@
 # -*- coding: utf-8 -*-
 # k4.py
 
+
+def get_element(index, word):
+    if index in one_letters:
+        return word[:1]
+    return word[:2]
+
+
 if __name__ == '__main__':
     symbols = "Hi He Lied Because Boron Could Not Oxidize Fluorine." \
               " New Nations Might Also Sign Peace Security Clause. Arthur King Can."
@@ -9,13 +16,6 @@ if __name__ == '__main__':
     words = symbols.split(" ")
     one_letters = [1, 5, 6, 7, 8, 9, 15, 16, 19]
     elements = []
-
-
-    def get_element(index, word):
-        if index in one_letters:
-            return word[:1]
-        return word[:2]
-
 
     for i, word in enumerate(words, start=1):
         elements.append(get_element(i, word))
