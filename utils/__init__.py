@@ -1,3 +1,2 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# __init__.py.py
+from .json import *
+from .n_gram import *
