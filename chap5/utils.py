@@ -114,3 +114,19 @@ def graph_from_edges(edges):
         graph.add_edge(pydot.Edge(id1, id2))
 
     return graph
+
+
+class Dependant:
+    def __init__(self, predicate):
+        self.subject = ""
+        self.predicate = predicate
+        self.object = ""
+
+    def set_subject(self, subject):
+        self.subject = subject
+
+    def set_object(self, object):
+        self.object = object
+
+    def has_all_attribute(self):
+        return all([bool(self.subject), bool(self.predicate), bool(self.object)])
